@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400&display=swap');
+/* selector descendentes */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    overflow-x: hidden;
+}
+
+body{
+    background-image: url(../img/backgrounds/colores2.jpg);
+}
+
+.grid{
+    display: grid;
+}
+
+#contenedor-grid{
+    display: grid;
+    grid-template-columns: 1, auto;
+    grid-template-rows: repeat(8, auto);
+}
+
+nav{
+    display: flex;
+    height: 140px;
+    flex-direction: column;
+    align-items: center;
+}
+
+    nav ul{
+        display: flex;
+        margin-bottom: 56px;
+        align-items: center;
+    }
+
+        nav ul li{
+            margin-right: 10px;
+        }    
+
+        nav ul li a{
+            display: flex;
+            text-decoration: none;
+        }    
+
+.logo{
+    height: 35px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.header{
+    margin-top: -40px;
+}
+
+.figure{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.img{
+    display: block;
+}
+
+
+@media (min-width: 1024px){
+    .img{
+        display: flex;
+        align-items: center;
+        justify-items: space-between;
+        height: auto;
+    }
+    
+    .img1{
+        height: 428px;
+    }
+    #contenedor-grid{
+        display: flex;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 10px;
+        width: 100%;
+        box-sizing: border-box;
+        height: 103px;
+        overflow-y: hidden;
+    }
+    nav ul{
+        display: flex;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin-right: 10px;
+    }
+    nav ul li a{
+        color:rgb(0, 0, 0);
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+    }
+    
+    nav ul li a:hover{
+        color: grey;
+    }
+
+    .logo{
+        margin-top: -41px;
+        overflow-y: hidden;
+        height: 30px;
+    }
+}
+
+.scale:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: all 1s;
+}
