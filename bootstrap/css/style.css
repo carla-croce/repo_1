@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400&display=swap');
+/* selector descendentes */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../img/backgrounds/colores2.jpg);
+}
+
+nav{
+    background-color: rgb(241, 203, 236);
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: gray;
+}
+
+
+
+nav ul{
+    display: flex;
+    margin-left: 10px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 10px;
+}
+
+
+nav ul li a{
+    color:rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: grey;
+}
+
+.header__img--fluid{
+    width: 100%;
+}
+
+.main__section{
+    width: 70%;
+    height: auto;
+    margin: 40px auto;
+    padding: 40px 30px;   
+}
+
+.section__h1{
+    color: rgb(236, 102, 205);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.section__h2{
+    color: rgb(236, 102, 205);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+p{
+    color: rgb(49, 47, 47);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.pie{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: black;
+    margin-top: 5rem;
+    padding: 10px 50px;
+}
+
+.pie__icon--sm{
+    height: 30px;    
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+.form{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.figure__figcaption{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+    height: auto;
+}
+
+.img1{
+    height: 428px;
+}
+
+.justify-content{
+    justify-content: center;
+}
+    
+
+.padding{
+    padding-left: 30px;
+}
+
+/* animacion en la página de planes*/
+.scale:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+/* formulario en "Contacto" */
+.formulario{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* clases y id para bootstrap */
+.bg-pink{
+    background-color: rgb(241, 203, 236);
+}
+
+#botonera img{
+    width: 180px;
+}
+
+#botonera{
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+}
+
